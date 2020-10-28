@@ -1,0 +1,425 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    color: black;
+    background-color: white;
+    background-size: cover;
+}
+
+.navbar-custom {
+    background-color: white;
+}
+
+.nav-link {
+    color: #303030;
+    margin-right: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.nav-link:hover {
+    color: #16e0bd;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(22,224,189, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.6rem;
+}
+
+#name {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 0 3em 3em 3em;
+}
+
+.subtitle {
+    background-color: #16e0bd;
+    color: white;
+    text-align: right;
+    font-size: 1.75rem;
+    padding-right: 0.75em;
+    width: 75%;
+}
+
+.contact-section {
+    display: none;
+}
+
+.title-contact p {
+    font-size: 1.2rem;
+}
+
+.title-contact .fab {
+    font-size: 4rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.contact {
+    width: 30%;
+}
+
+.contact a {
+    color: black;
+}
+
+.contact a:hover {
+    color: #16e0bd;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #303030;
+    background-image: url("skills-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1em;
+}
+
+.skills h2 {
+    padding: 1em 0;
+    text-align: center;
+    color: white;
+}
+
+.icon-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0em 1em;
+}
+
+.icon-grid p {
+    font-weight: bold;
+    color: white;
+}
+
+.icon {
+    text-align: center;
+    margin: 0.5em 0;
+    width: 28%;
+}
+
+.icon .fab {
+    color: #16e0bd;
+    font-size: 6rem;
+}
+
+.see-work {
+    margin-top: 1.5em;
+}
+
+.see-work a {
+    text-decoration: underline;
+    color: #16e0bd;
+}
+
+.see-work a:hover {
+    background-color: #16e0bd;
+    color: black;
+    text-decoration: none;
+}
+
+
+.portfolio {
+    background-color: #303030;
+    text-align: center;
+}
+
+.portfolio h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 1em 0 0 0;
+        color: white;
+}
+
+.portfolio-sub {
+    color: #16e0bd;
+    font-size: 1.75rem;
+    padding-bottom: 1em;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5em;
+}
+
+.project {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 400px;
+    opacity: .6;
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.project i {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+}
+
+.project a {
+    color: black;
+}
+
+.project a:hover {
+    color: #16e0bd;
+}
+
+.far {
+    margin-right: 2em;
+}
+
+.project:hover > .project-img {
+    transform: scale(1.2);
+    opacity: .4;
+}
+
+.project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    color: black;
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    border: 1px solid black;
+}
+
+.project-title {
+    color: #16e0bd;
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer i {
+    font-size: 3.5rem;
+    margin: 0 0.5em;
+}
+
+footer a {
+    color: #16e0bd;
+}
+
+footer a:hover {
+    color: #0E8E77;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2em;
+}
+
+
+@media (min-width: 768px) {
+
+    .navbar-custom {
+        background-color:#303030;
+    }
+    
+    .nav-link {
+        color:white;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: left;
+    }
+
+    .title-section {
+        max-width: 40%;
+        padding: 2em 3em;
+    }
+
+    .title-intro {
+        height: auto;
+    }
+
+    .title-contact {
+    padding-top: 2em;
+}
+    
+    .subtitle {
+        width: 100%
+    }
+
+    .contact-section {
+        display: block;
+    }
+
+    .skills {
+        width: 60%;
+        padding: 6em 1.5em;
+    }
+
+    .icon-grid {
+        padding: 0;
+    }
+
+    .see-work {
+        margin-top: 4em;
+    }
+
+    .project-grid {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 2em;
+    }
+
+    .project {
+        width: 30%;
+        max-width: 400px;
+        margin-bottom: 2em;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 4em 0;
+    }
+
+    .footer-main {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.9rem;
+    }
+
+    .title-contact p {
+        font-size: 1.5rem;
+    }
+
+    .title-contact .fab {
+        font-size: 5rem;
+    }
+
+    .contacts {
+        margin-top: 2em;
+    }
+
+    .skills h2 {
+        font-size: 2.5rem;
+    }
+
+    .icon .fab {
+        font-size: 7rem;
+    }
+
+    .icon p {
+        font-size: 1.2rem;
+    }
+
+    .portfolio h2 {
+        font-size: 3.8rem;
+    }
+
+    .portfolio-sub {
+        font-size: 2.3rem;
+    }
+
+    .project-grid {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (min-width: 1500px) {
+
+    .title-contact p {
+        font-size: 1.75rem;
+    }
+
+    .title-contact .fab {
+        font-size: 5.25rem;
+    }
+
+    .icon .fab {
+        font-size: 8.5rem;
+    }
+
+    .project i {
+        font-size: 2.5rem;
+    }
+
+}
